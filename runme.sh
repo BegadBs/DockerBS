@@ -1,17 +1,7 @@
 #!/bin/bash
 clear
 
-# cat << "EOF"
-#  ______ _ _     _                                        
-# |  ____| | |   | |                     /\                
-# | |__  | | |__ | | __ _ ___ _   _     /  \   _ __  _ __  
-# |  __| | | '_ \| |/ _` / __| | | |   / /\ \ | '_ \| '_ \ 
-# | |____| | |_) | | (_| \__ \ |_| |  / ____ \| |_) | |_) |
-# |______|_|_.__/|_|\__,_|___/\__, | /_/    \_\ .__/| .__/ 
-#                              __/ |          | |   | |    
-#                             |___/           |_|   |_|  
-# EOF
-#     sleep 6s
+
 installApps()
 {
     # wget http://prdownloads.sourceforge.net/webadmin/webmin_2.010_all.deb
@@ -252,39 +242,6 @@ startInstall()
         echo ""
         sleep 3s
     fi
-
-   # if [[ "$NAVID" == [yY] ]]; then
-     #   echo "###########################################"
-      #  echo "###        Installing Navidrome         ###"
-     #   echo "###########################################"
-      #  echo ""
-      #  echo "    1. Preparing to install Navidrome"
-
-      #  mkdir -p docker/navidrome
-      #  cd docker/navidrome
-
-        
-
-      #  echo "    2. Running the docker-compose.yml to install and start Navidrome"
-     #   echo ""
-     #   echo ""
-
-    #    if [[ "$OS" == "1" ]]; then
-     #     docker-compose up -d
-    #    fi
-
-     #   if [[ "$OS" != "1" ]]; then
-     #     sudo docker-compose up -d
-     #   fi
-#
-    #    echo ""
-     #   echo ""
-      #  echo "    Navigate to your server hostname / IP address on port 4533 to setup"
-      #  echo "    your new Navidrome admin account."
-      #  echo ""      
-      #  sleep 3s
-      #  cd
-   # fi
 
    exit 1 
 }
