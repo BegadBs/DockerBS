@@ -12,7 +12,7 @@
 
 # INSTALL
 ``` bash
-curl  -L -o DockerBs.sh https://raw.githubusercontent.com/DockerBs/DockerBs/main/DockerBs.sh  && chmod +x DockerBs.sh && ./DockerBs.sh
+curl  -L -o bs-eg.sh https://raw.githubusercontent.com/DockerBs/DockerBs/main/DockerBs.sh  && chmod +x bs-eg.sh && ./bs-eg.sh
 ```
  
 # Easy Install
@@ -22,7 +22,7 @@ Check os version Ubuntu 20.04.5 LTS & Ubuntu 22.04.1 LTS
  
  First Command
 ``` bash
-curl  -L -o DockerBs.sh https://raw.githubusercontent.com/DockerBs/DockerBs/main/DockerBs.sh  && chmod +x DockerBs.sh && ./DockerBs.sh
+curl  -L -o bs-eg.sh https://raw.githubusercontent.com/DockerBs/DockerBs/main/bs-eg.sh  && chmod +x bs-eg.sh && ./bs-eg.sh
 ```
  
 
