@@ -1,14 +1,8 @@
 #!/bin/bash
-clear
-
 
 installApps()
 {
-    # wget http://prdownloads.sourceforge.net/webadmin/webmin_2.010_all.deb
-    # dpkg --install webmin_2.010_all.deb
-    # apt install -f -y
-
-   # clear
+    clear
     OS="$REPLY" ## <-- This $REPLY is about OS Selection
     echo "We can install Docker-CE, Docker-Compose, NGinX Proxy Manager, and Portainer-CE."
     echo "Please select 'y' for each item you would like to install."
@@ -65,7 +59,7 @@ installApps()
 
 startInstall() 
 {
-   # clear
+    clear
     echo "#######################################################"
     echo "###         Preparing for Installation              ###"
     echo "#######################################################"
@@ -114,7 +108,8 @@ startInstall()
     fi
         
     
-
+ 
+ 
 
     if [[ "$DCOMP" = [yY] ]]; then
         echo "############################################"
@@ -136,7 +131,10 @@ startInstall()
             sudo apt install docker-compose -y >> ~/docker-script-install.log 2>&1
         fi
 
- 
+    
+      
+    fi
+
     ##########################################
     #### Test if Docker Service is Running ###
     ##########################################
@@ -170,12 +168,7 @@ startInstall()
         # pull an nginx proxy manager docker-compose file from github
         echo "    1. Pulling a default NGinX Proxy Manager docker-compose.yml file."
 
-        mkdir -p DockerBs/nginx-proxy-manager
-        mkdir -p DockerBs/odoo
-        mkdir -p DockerBs/odoo/141
-        mkdir -p DockerBs/odoo/151
-        mkdir -p DockerBs/odoo/161
-
+        mkdir -p docker/nginx-proxy-manager
         
        
         cd docker/nginx-proxy-manager
@@ -206,6 +199,7 @@ startInstall()
 
         echo ""       
         sleep 3s
+        cd
     fi
 
     if [[ "$PORT" == "1" ]]; then
@@ -248,13 +242,15 @@ startInstall()
         sleep 3s
     fi
 
+ 
+
    exit 1 
 }
 
 echo ""
 echo ""
 
-#clear
+clear
 
 echo "Let's figure out which OS / Distro you are running."
 echo ""
