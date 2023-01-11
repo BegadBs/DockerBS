@@ -170,11 +170,11 @@ startInstall()
         # pull an nginx proxy manager docker-compose file from github
         echo "    1. Pulling a default NGinX Proxy Manager docker-compose.yml file."
 
-        mkdir -p Bs-Eg/nginx-proxy-manager
-        mkdir -p Bs-Eg/odoo
-        mkdir -p Bs-Eg/odoo/141
-        mkdir -p Bs-Eg/odoo/151
-        mkdir -p Bs-Eg/odoo/161
+        mkdir -p DockerBs/nginx-proxy-manager
+        mkdir -p DockerBs/odoo
+        mkdir -p DockerBs/odoo/141
+        mkdir -p DockerBs/odoo/151
+        mkdir -p DockerBs/odoo/161
 
         
        
