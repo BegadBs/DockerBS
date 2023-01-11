@@ -1,7 +1,7 @@
 apt install git -y
 cd /opt
 git clone  https://github.com/BS-Eg/DockerBS
-cd bs-eg
+cd BS-Eg
 chmod +x  runme.sh
 ./runme.sh
 
