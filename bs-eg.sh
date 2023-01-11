@@ -1,4 +1,3 @@
-#!/bin/bash
 apt install git -y
 cd /opt
 git clone  https://github.com/BS-Eg/DockerBS
