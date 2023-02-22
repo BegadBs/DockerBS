@@ -168,10 +168,10 @@ startInstall()
         # pull an nginx proxy manager docker-compose file from github
         echo "    1. Pulling a default NGinX Proxy Manager docker-compose.yml file."
 
-        mkdir -p nginx-proxy-manager      
+        mkdir -p npm     
         
 
-        cd nginx-proxy-manager
+        cd npm
         wget https://raw.githubusercontent.com/elblasy33/docker-beso/main/docker-compose.yml
         
         
