@@ -2,9 +2,11 @@
 apt install git -y
 cd ..
 mkdir -p odoo      
-mkdir -p odoo/151      
-mkdir -p odoo/161
-mkdir -p odoo/npm
+mkdir -p odoo/161      
+mkdir -p odoo/l-171
+mkdir -p odoo/d-171
+mkdir -p odoo/code
+
 
 
 git clone  https://github.com/BS-Eg/DockerBS
